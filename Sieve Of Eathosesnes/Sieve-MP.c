@@ -21,7 +21,7 @@ typedef struct mark_args {
 
 } mark_args;
 
-void* Mark(void* args)
+int Mark(void* args)
 {
     mark_args* mark_argus = (mark_args*)args;
     for (unsigned long long p = 0; p <= mark_argus->idx -1; p++) {
@@ -30,6 +30,7 @@ void* Mark(void* args)
                 mark_argus->lst[i] = false;
         }
     }
+    exit(0);
 
 }
 
@@ -67,11 +68,11 @@ void* SieveOfEratosthenes(unsigned long long n,  bool* lst, unsigned long long t
         args->lst = lst;
         args->primes = primes;
         args->idx = idx;
-        if (fork() > 0) Mark((void*)args);
+        if (fork() == 0) Mark((void*)args);
        
     }
     
-     wait(NULL);
+    for (unsigned long long t = 0; t < th_cnt; t++) wait(NULL);
     
     return NULL;
 }
