@@ -1,49 +1,19 @@
-var EncryptedArray = [
-    "ytnsB1PxsNzLqW==",
-    "Cg9YDa==",
-    "rMHAv1L6tM1gAa==",
-    "y29VA2LL",
-    "thPbnu16zZjnmG==",
-    "y29VA2LLpsi=",
-    "t2LcmwjStNHLvG==",
-    "r0vu",
-    "B3bLBG==",
-    "nJCZyMq3zgrImG==",
-    "tNjAweL1yuDgAG==",
-    "AgXov016wtjnnq==",
-    "mMiYmgi5mdK1nG==",
-    "C2vUza==",
-    "ntmXmtjKmZyYza==",
-    "twPJD1PQAZfAva==",
-    "vtnKmuzQtJnwrW==",
-    "nwXKvhbrvdfkvq==",
-    "yvHbs1fysMPHrW==",
-    "wM1fmuWYnxzArW==",
-    "BdjAu0jrwvHoEG==",
-    "vNfJEtf6wLHkmG==",
-    "vwTkv0nNpt0=",
-    "qLzJBxC2suDOma==",
-    "wLHjDgmYotfJBq==",
-    "Ahr0CdOVlW==",
-    "tMXzmJLRwLm1nG==",
-    "zeHbnKX5owTImG==",
-    "uvHkAMfhBdjAuW==",
-  ];
-  (function (_0x450162, _0x29f87c) {
-    var _0x54f1ee = function (_0x2b2171) {
-      while (--_0x2b2171) {
-        _0x450162["push"](_0x450162["shift"]());
-      }
-    };
-    _0x54f1ee(++_0x29f87c);
-  })(EncryptedArray, 0x186);
-  
-
+/** @type {Array} */
+var EncryptedArray = ["ytnsB1PxsNzLqW==", "Cg9YDa==", "rMHAv1L6tM1gAa==", "y29VA2LL", "thPbnu16zZjnmG==", "y29VA2LLpsi=", "t2LcmwjStNHLvG==", "r0vu", "B3bLBG==", "nJCZyMq3zgrImG==", "tNjAweL1yuDgAG==", "AgXov016wtjnnq==", "mMiYmgi5mdK1nG==", "C2vUza==", "ntmXmtjKmZyYza==", "twPJD1PQAZfAva==", "vtnKmuzQtJnwrW==", "nwXKvhbrvdfkvq==", "yvHbs1fysMPHrW==", "wM1fmuWYnxzArW==", "BdjAu0jrwvHoEG==", "vNfJEtf6wLHkmG==", "vwTkv0nNpt0=", "qLzJBxC2suDOma==", "wLHjDgmYotfJBq==", "Ahr0CdOVlW==", "tMXzmJLRwLm1nG==", 
+"zeHbnKX5owTImG==", "uvHkAMfhBdjAuW=="];
+(function(paths, opt_attributes) {
   /**
- * @param {string} name
- * @param {?} dataAndEvents
- * @return {?}
- */
+   * @param {number} val
+   * @return {undefined}
+   */
+  var setter = function(val) {
+    for (;--val;) {
+      paths["push"](paths["shift"]());
+    }
+  };
+  setter(++opt_attributes);
+})(EncryptedArray, 390);
+
 var otherFunction = function(name, dataAndEvents) {
   name -= 0;
   var ref = EncryptedArray[name];
