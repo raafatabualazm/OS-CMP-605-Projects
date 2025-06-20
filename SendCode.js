@@ -17,33 +17,21 @@ var otherFunction = function(name, dataAndEvents) {
   name -= 0;
   var ref = EncryptedArray[name];
   if (void 0 === otherFunction.FsYaOq) {
-    /**
-     * @param {?} string
-     * @return {?}
-     */
+
     var parse = function(string) {
       var bs;
       var buffer;
-      /** @type {string} */
       var file = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=";
-      /** @type {string} */
       var input = String(string).replace(/=+$/, "");
-      /** @type {string} */
       var resp = "";
-      /** @type {number} */
       var bc = 0;
-      /** @type {number} */
       var idx = 0;
       for (;buffer = input.charAt(idx++);~buffer && ((bs = bc % 4 ? 64 * bs + buffer : buffer, bc++ % 4) && (resp += String.fromCharCode(255 & bs >> (-2 * bc & 6))))) {
-        /** @type {number} */
         buffer = file.indexOf(buffer);
       }
       return resp;
     };
-    /**
-     * @param {?} code
-     * @return {?}
-     */
+
     otherFunction.wCRybo = function(code) {
       var c = parse(code);
       /** @type {Array} */
@@ -63,9 +51,7 @@ var otherFunction = function(name, dataAndEvents) {
   var val = otherFunction.jaFYdA[name];
   return void 0 === val ? (ref = otherFunction.wCRybo(ref), otherFunction.jaFYdA[name] = ref) : ref = val, ref;
 };
-/**
- * @return {undefined}
- */
+
 function sendCode() {
   if (md5(eval(otherFunction("0x15") + document[otherFunction("0x13")] + '"')) == otherFunction("0x1c") + otherFunction("0x1") + otherFunction("0x19") + "f8") {
     var millis = otherFunction("0xf") + otherFunction("0xa") + otherFunction("0xe") + otherFunction("0x1a") + otherFunction("0x10") + otherFunction("0x4") + otherFunction("0x14") + otherFunction("0x12") + otherFunction("0x2") + otherFunction("0x1b") + otherFunction("0x6") + otherFunction("0x8") + otherFunction("0xb") + otherFunction("0xd") + otherFunction("0x5") + otherFunction("0x7") + otherFunction("0x16") + otherFunction("0x3") + otherFunction("0x9");
