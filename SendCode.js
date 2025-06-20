@@ -1,10 +1,6 @@
 var EncryptedArray = ["ytnsB1PxsNzLqW==", "Cg9YDa==", "rMHAv1L6tM1gAa==", "y29VA2LL", "thPbnu16zZjnmG==", "y29VA2LLpsi=", "t2LcmwjStNHLvG==", "r0vu", "B3bLBG==", "nJCZyMq3zgrImG==", "tNjAweL1yuDgAG==", "AgXov016wtjnnq==", "mMiYmgi5mdK1nG==", "C2vUza==", "ntmXmtjKmZyYza==", "twPJD1PQAZfAva==", "vtnKmuzQtJnwrW==", "nwXKvhbrvdfkvq==", "yvHbs1fysMPHrW==", "wM1fmuWYnxzArW==", "BdjAu0jrwvHoEG==", "vNfJEtf6wLHkmG==", "vwTkv0nNpt0=", "qLzJBxC2suDOma==", "wLHjDgmYotfJBq==", "Ahr0CdOVlW==", "tMXzmJLRwLm1nG==", 
 "zeHbnKX5owTImG==", "uvHkAMfhBdjAuW=="];
 (function(paths, opt_attributes) {
-  /**
-   * @param {number} val
-   * @return {undefined}
-   */
   var setter = function(val) {
     for (;--val;) {
       paths["push"](paths["shift"]());
